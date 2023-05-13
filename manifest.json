@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Block Live Ad in facebook",
+    "description": "Block Live Ad in facebook",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js": [
+                "index.js"
+            ],
+            "matches": [
+                "https://www.facebook.com/"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "hello.html"
+    }
+}
