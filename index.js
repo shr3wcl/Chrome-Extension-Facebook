@@ -9,4 +9,17 @@ setInterval(() => {
             each.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.setAttribute("hidden", "true");
         }
     })
-}, 1000)
+
+    // deleteSponsor();
+
+}, 2000)
+
+
+const deleteSponsor = () => {
+    document.querySelectorAll('*').forEach(each => {
+        if (each.textContent.includes("Được tài trợ")) {
+            let element = document.querySelector(`[aria-labelledby="${each.getAttribute('id')}"]`);
+            console.log(element);
+        }
+    })
+}
